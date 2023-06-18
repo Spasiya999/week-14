@@ -22,8 +22,8 @@
                                 <label>Room type</label>
                                 <select name="status" id="status" class="custom-select">
                                     <option>Select Room type</option>
-                                    @foreach ($types as $key => $type )
-                                        <option value="{{$key}}" >{{$type}}</option>
+                                    @foreach ($roomTypes as $key => $type)
+                                        <option value="{{ $key }}">{{ $type }}</option>
                                     @endforeach
                                 </select>
                             </div>

@@ -20,10 +20,10 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label>Room type</label>
-                                <select class="custom-select">
+                                <select class="form-control">
                                     <option>Select Room type</option>
-                                    @foreach ($types as $key => $type )
-                                        <option value="{{$key}}" {{($room->type == $key ? 'selected': '' )}} >{{$type}}</option>
+                                    @foreach ($roomTypes as $key => $type)
+                                        <option value="{{ $key }}">{{ $type }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -63,7 +63,7 @@
                                         <option value="{{$key}}" {{($room->status == $key ? 'selected': '' )}} >{{$status}}</option>
                                     @endforeach
                                 </select>
-                                
+
                             </div>
                         </div>
                     </div>
