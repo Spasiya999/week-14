@@ -33,7 +33,7 @@ class RoomController extends Controller
      */
     public function store(StoreRoomRequest $request)
     {
-        dump($request->all());
+        // dump($request->all());
         $data = [
             'number' => $request->room_no,
             'type' => $request->type ?? 'standard',
@@ -45,6 +45,7 @@ class RoomController extends Controller
         ];
         // dd($data);
         Room::create($data);
+        return redirect()->route('room.index');
     }
 
 

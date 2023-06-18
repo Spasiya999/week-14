@@ -91,6 +91,9 @@
     <!-- end slider section -->
   </div>
 
+  <!-- booking section -->
+  <x-booking-form :roomTypes="$roomTypes" ></x-booking-form>
+  <!-- end booking section -->
   <!-- offer section -->
 
   <section class="offer_section layout_padding-bottom">

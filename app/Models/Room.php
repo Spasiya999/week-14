@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Database\Factories\RoomsFactory;
 
 class Room extends Model
 {
@@ -31,4 +32,9 @@ class Room extends Model
         'unavailable' => 'Unavailable',
         'maintenance' => 'Maintenance',
     ];
+
+    public static function newFactory(): RoomsFactory
+    {
+        return RoomsFactory::new();
+    }
 }
